@@ -1,0 +1,9 @@
+docker swarm init --advertise-addr $(docker-machine ip Char)
+
+# Створення локального swarm, де головним є Char
+# docker swarm init generates two random tokens, a worker token and a manager token. 
+# --advertise-addr : This flag specifies the address that will be advertised to other members of the swarm for API access and overlay networking
+# https://docs.docker.com/engine/reference/commandline/swarm_init/#--force-new-cluster
+# В режиме swarm все ноды делятся на два типа: manager и worker. При этом полноценный кластер может обходиться без рабочих нод вообще, то есть менеджеры по-умолчанию являются также и рабочими.
+# Среди менеджеров всегда присутствует один, который на данный момент является лидером кластера. Все управляющие команды, которые выполняются на других менеджерах автоматически перенаправляются на него.
+# https://habr.com/company/redmadrobot/blog/318866/

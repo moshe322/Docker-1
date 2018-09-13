@@ -1,0 +1,4 @@
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377"
+
+# Log into or run a command on a machine using SSH
+# https://docs.docker.com/machine/reference/ssh/

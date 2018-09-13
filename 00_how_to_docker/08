@@ -1,0 +1,7 @@
+docker run --rm -it alpine
+
+# For interactive processes (like a shell), you must use -it in order to allocate a tty for the container process.
+
+# Yes, the origin of TTY in Unix is from teletypewriter. The tele in telephone, teletypewriter, etc comes from a Greek root meaning far or distant. tele + phon (sound) = Speaking at a distance and so on.
+
+# Timeshare systems (pre-Unix) developed physical terminals that allowed you to interact with (share) the computer during your scheduled time. These terminals meant you did not have to be physically in front of the computer to use it.

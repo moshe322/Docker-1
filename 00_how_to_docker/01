@@ -1,0 +1,5 @@
+docker-machine create --driver virtualbox Char
+
+# Create a machine. Requires the --driver flag to indicate which provider (VirtualBox, DigitalOcean, AWS, etc.) the machine should be created on, and an argument to indicate the name of the created machine.
+# Here is an example of using the --virtualbox driver to create a machine called dev : https://docs.docker.com/machine/reference/create/
+# To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env Char

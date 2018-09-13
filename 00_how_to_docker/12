@@ -1,0 +1,5 @@
+docker run --name spawning-pool --restart on-failure -v hatchery:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -d mysql
+
+# Additionally, the operator can set any environment variable in the container by using one or more -e flags. 
+# https://docs.docker.com/engine/reference/run/#env-environment-variables
+# -v configures the volume

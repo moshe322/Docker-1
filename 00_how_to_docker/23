@@ -1,0 +1,4 @@
+docker network create --driver overlay overmind
+
+# https://docs.docker.com/engine/reference/commandline/network_create/#parent-command
+# An overlay network is a computer network that is built on top of another network. The purpose of the overlay network is to add missing functionality without a complete network redesign.
